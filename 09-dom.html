@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+
+  <button>9a</button>
+  <button class="but9b">9b</button>
+  <p></p>
+  <button class="heads" onclick="
+  
+    const par = document.querySelector('.par');
+    par.innerHTML = 'heads'
+  ">heads</button>
+  <button class="tails" onclick="
+    const par = document.querySelector('.par');
+    par.innerHTML = 'tails'
+  ">tails</button>
+
+  <p class="par"></p>
+  <script>
+
+    const buttonElement =  document.querySelector('button');
+    console.log(buttonElement);
+
+    const buttonElement2 = document.querySelector('.but9b');
+    console.log(buttonElement2);
+
+    buttonElement2.innerHTML = '9b done';  
+  
+    /*
+    document.body.innerHTML = 'hello';
+    document.title = 'Good Job'
+    */ 
+
+    /*
+    console.log(document.title);
+    document.title = 'changed';
+
+    console.log(document.body);
+    console.log(typeof document.body);
+
+
+    document.body.innerHTML = '<button>Good Job</button>';
+
+    */
+
+
+  </script>
+  
+</body>
+</html>
